@@ -6,11 +6,12 @@ const photoshop = require("photoshop");
 
 export const PsParrot = () => {
     const [fillBody, setFillBody] = useState("#3dbfef");
+    const [hue, setHue] = useState(220);
 
     const onForegroundColorChanged = React.useCallback(
         (e, d) => {
-            console.log(photoshop.app.foregroundColor.rgb.hexValue);
             setFillBody("#" + photoshop.app.foregroundColor.rgb.hexValue);
+            setHue(photoshop.app.foregroundColor.hsb.hue);
         },
         [photoshop.app.foregroundColor]
     );
@@ -24,7 +25,7 @@ export const PsParrot = () => {
 
     return (
         <>
-            <Parrot fillBody={fillBody}/>
+            <Parrot fillBody={fillBody} hue={hue}/>
         </>
     )
 }
