@@ -44,7 +44,6 @@ const mat8 = (yPos, deg) => {
 const Parrot = memo((props) => {
     const { fillBody, hue } = props;
     const fillNose = "#7b8c68";
-    console.log(sinDeg(hue));
 
     return (
         <>
