@@ -1,3 +1,13 @@
+# Photoshop Parrot
+デジクリ2023年度前期PGおもちゃ企画で発表した作品です。
+
+## 概要
+カラーホイールと連動して動くParty Parrotを追加するPhotoshop用UXPプラグインです。
+
+## その他
+後日書きます…
+
+---
 # React Starter Plugin
 
 This plugin is a good place to get started when building a Photoshop plugin using React. It comes defined with all the dependencies that you'll need to get started. As this is a React project, you'll need to do some initial configuration before this will be usable in Photoshop.
